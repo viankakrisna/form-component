@@ -5,7 +5,7 @@ import isFunction from 'lodash/isFunction';
 import isArray from 'lodash/isArray';
 
 export default class Form extends React.Component {
-	state = { loading: false, formData: {}, response: false };
+	state = { loading: false, formData: {...this.props.formData}, response: false };
 	bindFormData = path => {
 		return {
 			onChange: e =>
