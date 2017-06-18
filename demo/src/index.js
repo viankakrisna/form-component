@@ -11,7 +11,7 @@ let Demo = props => (
 				new Promise(resolve => setTimeout(() => resolve(formData), 2000))}
 		>
 			{(state, model) => (
-				<fieldset>
+				<fieldset style={{opacity: state.loading ? 0.5 : 1}}>
 					<input {...model('name')} type="text" />
 					<input {...model(['email', 0])} type="text" />
 					<input {...model(['profile', 'data'])} type="text" />

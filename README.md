@@ -21,7 +21,7 @@ Example:
 import React from 'react';
 import { render } from 'react-dom';
 
-import Form from '../../src';
+import Form from 'form-component';
 
 let Demo = props => (
 	<div>
